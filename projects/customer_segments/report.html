@@ -11811,16 +11811,16 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span> <span class="c1"># Allows the use of display() for DataFrames</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span> <span class="c1"># Allows the use of display() for DataFrames</span>
 
 <span class="c1"># Import supplementary visualizations code visuals.py</span>
-<span class="kn">import</span> <span class="nn">visuals</span> <span class="k">as</span> <span class="nn">vs</span>
+<span class="kn">import</span> <span class="nn">visuals</span> <span class="kn">as</span> <span class="nn">vs</span>
 
 <span class="c1"># Pretty display for notebooks</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -11828,10 +11828,10 @@ div#notebook {
 <span class="c1"># Load the wholesale customers dataset</span>
 <span class="k">try</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;customers.csv&quot;</span><span class="p">)</span>
-    <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Region&#39;</span><span class="p">,</span> <span class="s1">&#39;Channel&#39;</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wholesale customers dataset has </span><span class="si">{}</span><span class="s2"> samples with </span><span class="si">{}</span><span class="s2"> features each.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Region&#39;</span><span class="p">,</span> <span class="s1">&#39;Channel&#39;</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Wholesale customers dataset has {} samples with {} features each.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 <span class="k">except</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dataset could not be loaded. Is the dataset missing?&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Dataset could not be loaded. Is the dataset missing?&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11869,10 +11869,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display a description of the dataset</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
 <span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
 </pre></div>
 
@@ -12012,15 +12012,15 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
 <span class="n">indices</span> <span class="o">=</span> <span class="p">[</span><span class="mi">118</span><span class="p">,</span><span class="mi">305</span><span class="p">,</span><span class="mi">333</span><span class="p">]</span>
 
 <span class="c1"># Create a DataFrame of the chosen samples</span>
-<span class="n">samples</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">indices</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Chosen samples of wholesale customers dataset:&quot;</span><span class="p">)</span>
+<span class="n">samples</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">indices</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Chosen samples of wholesale customers dataset:&quot;</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">samples</span><span class="p">)</span>
 </pre></div>
 
@@ -12138,12 +12138,12 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
 
-<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">((</span><span class="n">samples</span><span class="o">-</span><span class="n">data</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="o">/</span><span class="n">data</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cbar</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">((</span><span class="n">samples</span><span class="o">-</span><span class="n">data</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="o">/</span><span class="n">data</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">annot</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">cbar</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12156,13 +12156,13 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[14]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a1695e090&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a1450a510&gt;</pre>
 </div>
 
 </div>
@@ -12440,11 +12440,11 @@ OMUYY1zMirgxxriYFXFjjHExK+LGGONi/wc9QFJskaZwCgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">DecisionTreeRegressor</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span>
 
 
 <span class="c1"># TODO: Make a copy of the DataFrame, using the &#39;drop&#39; function to drop the given feature</span>
@@ -12463,7 +12463,7 @@ OMUYY1zMirgxxriYFXFjjHExK+LGGONi/wc9QFJskaZwCgAAAABJRU5ErkJggg==
 <span class="c1"># TODO: Report the score of the prediction using the testing set</span>
 <span class="n">score</span> <span class="o">=</span> <span class="n">regressor</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span><span class="n">y_test</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prediction score of the testing set is: </span><span class="si">{:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Prediction score of the testing set is: {:.4f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -12481,6 +12481,18 @@ OMUYY1zMirgxxriYFXFjjHExK+LGGONi/wc9QFJskaZwCgAAAABJRU5ErkJggg==
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Prediction score of the testing set is: 0.7784
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/yihengli/.pyenv/versions/anaconda2-5.0.0/lib/python2.7/site-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  &#34;This module will be removed in 0.20.&#34;, DeprecationWarning)
 </pre>
 </div>
 </div>
@@ -12528,10 +12540,10 @@ OMUYY1zMirgxxriYFXFjjHExK+LGGONi/wc9QFJskaZwCgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">scatter_matrix</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="n">diagonal</span> <span class="o">=</span> <span class="s1">&#39;kde&#39;</span><span class="p">);</span>
 </pre></div>
 
@@ -14332,11 +14344,11 @@ RU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
 
 <span class="c1"># Load the example flights dataset and conver to long-form</span>
@@ -14344,7 +14356,7 @@ RU5ErkJggg==
 
 <span class="c1"># Draw a heatmap with the numeric values in each cell</span>
 <span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">corr</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=.</span><span class="mi">5</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Blues&quot;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">corr</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=.</span><span class="mi">5</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Blues&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14357,13 +14369,13 @@ RU5ErkJggg==
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[17]:</div>
+<div class="prompt output_prompt">Out[7]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a163b4f90&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a1e2ec810&gt;</pre>
 </div>
 
 </div>
@@ -14927,10 +14939,10 @@ GxERESkzVNiIiIhImaHCRkRERMqM/wfDXb8pom3//QAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
 <span class="n">log_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
 <span class="c1"># TODO: Scale the sample data using the natural logarithm</span>
@@ -19191,10 +19203,10 @@ AElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
 <span class="n">display</span><span class="p">(</span><span class="n">log_samples</span><span class="p">)</span>
 </pre></div>
 
@@ -19298,10 +19310,10 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Try to find the outliers that appear in multiple arrays</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Try to find the outliers that appear in multiple arrays</span>
 <span class="n">potential_outliers</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([])</span>
 
 <span class="c1"># For each feature find the data points with extreme high or low values</span>
@@ -19317,8 +19329,8 @@ Once you have performed this implementation, the dataset will be stored in the v
     <span class="n">step</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">Q3</span> <span class="o">-</span> <span class="n">Q1</span><span class="p">)</span>
     
     <span class="c1"># Display the outliers</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data points considered outliers for the feature &#39;</span><span class="si">{}</span><span class="s2">&#39;:&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">feature</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The range is &quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="si">{:.3f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Q1</span> <span class="o">-</span> <span class="n">step</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; to &quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="si">{:.3f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Q3</span> <span class="o">+</span> <span class="n">step</span><span class="p">)</span> <span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Data points considered outliers for the feature &#39;{}&#39;:&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">feature</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;The range is &quot;</span> <span class="o">+</span> <span class="s2">&quot;{:.3f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Q1</span> <span class="o">-</span> <span class="n">step</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; to &quot;</span> <span class="o">+</span> <span class="s2">&quot;{:.3f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Q3</span> <span class="o">+</span> <span class="n">step</span><span class="p">)</span> <span class="p">)</span>
     
     <span class="n">display</span><span class="p">(</span><span class="n">log_data</span><span class="p">[</span><span class="o">~</span><span class="p">((</span><span class="n">log_data</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="n">step</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">log_data</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="n">step</span><span class="p">))])</span>
     
@@ -19332,7 +19344,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 <span class="n">outliers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">95</span><span class="p">,</span> <span class="mi">338</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">218</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">142</span><span class="p">,</span> <span class="mi">187</span><span class="p">,</span> <span class="mi">154</span><span class="p">,</span> <span class="mi">65</span><span class="p">]</span>
 
 <span class="c1"># Remove the outliers, if any were specified</span>
-<span class="n">good_data</span> <span class="o">=</span> <span class="n">log_data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">log_data</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">outliers</span><span class="p">])</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">good_data</span> <span class="o">=</span> <span class="n">log_data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">log_data</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">outliers</span><span class="p">])</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -20113,10 +20125,10 @@ The range is 3.770 to 9.749
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">potential_outliers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">potential_outliers</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">potential_outliers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">potential_outliers</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">potential_outliers</span><span class="p">[</span><span class="n">potential_outliers</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
@@ -20130,7 +20142,7 @@ The range is 3.770 to 9.749
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[21]:</div>
+<div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -20189,10 +20201,10 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="k">import</span> <span class="n">PCA</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
 
 
 <span class="c1"># TODO: Apply PCA by fitting the good data with the same number of dimensions as features</span>
@@ -20599,6 +20611,43 @@ SxABAADFEkQAAECxBBEAAFCs/wTLEdKmP7XA2wAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">pca_results</span><span class="p">[</span><span class="s1">&#39;Explained Variance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dimension 1    0.4691
+Dimension 2    0.7335
+Dimension 3    0.8369
+Dimension 4    0.9356
+Dimension 5    0.9797
+Dimension 6    1.0000
+Name: Explained Variance, dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -20609,9 +20658,9 @@ SxABAADFEkQAAECxBBEAAFCs/wTLEdKmP7XA2wAAAABJRU5ErkJggg==
 <li>And, 93.56% variance has been explained by the first four components.</li>
 </ul>
 <ol>
-<li><strong>Dimension 1:</strong> 46.91% variance with cumulative variance 46.91%. It has the larges negative share of <code>Detergent_Paper</code> and also negative <code>Milk</code> and <code>Grocery</code>. This looks like a cafe which mainly spends on food like <code>Fresh</code> and <code>Frozen</code>.</li>
-<li><strong>Dimension 2:</strong> 26.44% variance with cumulative variance 73.35%. Most negative shares are <code>Fresh</code>, <code>Frozen</code> and <code>Delicatessen</code> (all food!). It looks a store mainly sells non-food stuffs.</li>
-<li><strong>Dimension 3:</strong> 10.34% variance with cumulative variance 83.69%. Largest positive weight in <code>Fresh</code>. We also notice that <code>Frozen</code> and <code>Delicatessen</code> are in a strong negative correlation with <code>Fresh</code> in this component. Those observations make it look like a market mainly sells fresh food.</li>
+<li><strong>Dimension 1:</strong> 46.91% variance with cumulative variance 46.91%. It has the largest negative share of <code>Detergent_Paper</code> and also negative <code>Milk</code> and <code>Grocery</code>. It would likely separate out the retailers from the other types of customers.</li>
+<li><strong>Dimension 2:</strong> 26.44% variance with cumulative variance 73.35%. Most negative shares are <code>Fresh</code>, <code>Frozen</code> and <code>Delicatessen</code> (all food!). It may separate out restaurants from the other types of customers.</li>
+<li><strong>Dimension 3:</strong> 10.34% variance with cumulative variance 83.69%. Largest positive weight in <code>Fresh</code>. We also notice that <code>Frozen</code> and <code>Delicatessen</code> are in a strong negative correlation with <code>Fresh</code> in this component. Those observations make it look like a market mainly sells food or a restaurant.</li>
 <li><strong>Dimension 4:</strong> 9.87% variance with cumulative variance 93.56%. The negative weight of <code>Frozen</code> has the greatest impact while the positive weight of <code>Delicatessen</code> has the second largest share. This component looks like a deli with strong purchase cost in <code>Delicatessen</code> and negative correlation with <code>Frozen</code>.</li>
 </ol>
 
@@ -20629,10 +20678,10 @@ SxABAADFEkQAAECxBBEAAFCs/wTLEdKmP7XA2wAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display sample log-data after having a PCA transformation applied</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after having a PCA transformation applied</span>
 <span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">pca_samples</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">pca_results</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>
 </pre></div>
 
@@ -20733,10 +20782,10 @@ SxABAADFEkQAAECxBBEAAFCs/wTLEdKmP7XA2wAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with only two dimensions</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with only two dimensions</span>
 <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">good_data</span><span class="p">)</span>
 
@@ -20766,10 +20815,10 @@ SxABAADFEkQAAECxBBEAAFCs/wTLEdKmP7XA2wAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display sample log-data after applying PCA transformation in two dimensions</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after applying PCA transformation in two dimensions</span>
 <span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">pca_samples</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Dimension 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Dimension 2&#39;</span><span class="p">]))</span>
 </pre></div>
 
@@ -20849,10 +20898,10 @@ SxABAADFEkQAAECxBBEAAFCs/wTLEdKmP7XA2wAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a biplot</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Create a biplot</span>
 <span class="n">vs</span><span class="o">.</span><span class="n">biplot</span><span class="p">(</span><span class="n">good_data</span><span class="p">,</span> <span class="n">reduced_data</span><span class="p">,</span> <span class="n">pca</span><span class="p">)</span>
 </pre></div>
 
@@ -20866,13 +20915,13 @@ SxABAADFEkQAAECxBBEAAFCs/wTLEdKmP7XA2wAAAABJRU5ErkJggg==
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[26]:</div>
+<div class="prompt output_prompt">Out[16]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a16c69b10&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a1d195e90&gt;</pre>
 </div>
 
 </div>
@@ -21922,11 +21971,11 @@ REREHMT/B7tfQjNR7hQoAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.mixture</span> <span class="k">import</span> <span class="n">GaussianMixture</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">silhouette_score</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.mixture</span> <span class="kn">import</span> <span class="n">GaussianMixture</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">silhouette_score</span>
 
 <span class="k">def</span> <span class="nf">GaussianFit</span><span class="p">(</span><span class="n">n_cluster</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -21937,7 +21986,7 @@ REREHMT/B7tfQjNR7hQoAAAAAElFTkSuQmCC
     <span class="n">clusterer</span> <span class="o">=</span> <span class="n">GaussianMixture</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_cluster</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
     <span class="n">preds</span> <span class="o">=</span> <span class="n">clusterer</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
     <span class="n">score</span> <span class="o">=</span> <span class="n">silhouette_score</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">preds</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Cluster Numbers </span><span class="si">{}</span><span class="s2"> with score </span><span class="si">{:.3f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_cluster</span><span class="p">,</span> <span class="n">score</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Current Cluster Numbers {} with score {:.3f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_cluster</span><span class="p">,</span> <span class="n">score</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">score</span>
 
 <span class="c1"># Loop through number of clusters from 2 to 10, print out the optimal parameter with the </span>
@@ -21945,7 +21994,7 @@ REREHMT/B7tfQjNR7hQoAAAAAElFTkSuQmCC
 <span class="n">n_clusters</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">GaussianFit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">reduced_data</span><span class="p">),</span> <span class="n">n_clusters</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The best score is &quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="si">{:.3f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">scores</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; with cluster number &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">scores</span><span class="p">))</span><span class="o">+</span><span class="mi">2</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;The best score is &quot;</span> <span class="o">+</span> <span class="s2">&quot;{:.3f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">scores</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; with cluster number &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">scores</span><span class="p">))</span><span class="o">+</span><span class="mi">2</span><span class="p">))</span>
 
 <span class="c1"># TODO: Apply your clustering algorithm of choice to the reduced data </span>
 <span class="n">clusterer</span> <span class="o">=</span> <span class="n">GaussianMixture</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">reduced_data</span><span class="p">)</span>
@@ -22029,10 +22078,10 @@ The best score is 0.428 with cluster number 2
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the results of the clustering from implementation</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the results of the clustering from implementation</span>
 <span class="n">vs</span><span class="o">.</span><span class="n">cluster_results</span><span class="p">(</span><span class="n">reduced_data</span><span class="p">,</span> <span class="n">preds</span><span class="p">,</span> <span class="n">centers</span><span class="p">,</span> <span class="n">pca_samples</span><span class="p">)</span>
 </pre></div>
 
@@ -22707,17 +22756,17 @@ gg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Inverse transform the centers</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Inverse transform the centers</span>
 <span class="n">log_centers</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">centers</span><span class="p">)</span>
 
 <span class="c1"># TODO: Exponentiate the centers</span>
 <span class="n">true_centers</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">log_centers</span><span class="p">)</span>
 
 <span class="c1"># Display the true centers</span>
-<span class="n">segments</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Segment </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">centers</span><span class="p">))]</span>
+<span class="n">segments</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Segment {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">centers</span><span class="p">))]</span>
 <span class="n">true_centers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">true_centers</span><span class="p">),</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 <span class="n">true_centers</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">segments</span>
 <span class="n">display</span><span class="p">(</span><span class="n">true_centers</span><span class="p">)</span>
@@ -22808,12 +22857,12 @@ gg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
 
-<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">((</span><span class="n">true_centers</span><span class="o">-</span><span class="n">data</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="o">/</span><span class="n">data</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cbar</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">((</span><span class="n">true_centers</span><span class="o">-</span><span class="n">data</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="o">/</span><span class="n">data</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">annot</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">cbar</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -22826,13 +22875,13 @@ gg==
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[30]:</div>
+<div class="prompt output_prompt">Out[20]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a192fb090&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a1e264250&gt;</pre>
 </div>
 
 </div>
@@ -23124,12 +23173,12 @@ kT5tIYQoQqRoCyFEESJFWwghihAp2kIIUYRI0RZCiCLk//UhzypXH/8pAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the predictions</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the predictions</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">pred</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sample_preds</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sample point&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;predicted to be in Cluster&quot;</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Sample point&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;predicted to be in Cluster&quot;</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -23245,10 +23294,10 @@ kT5tIYQoQqRoCyFEESJFWwghihAp2kIIUYRI0RZCiCLk//UhzypXH/8pAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the clustering results based on &#39;Channel&#39; data</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the clustering results based on &#39;Channel&#39; data</span>
 <span class="n">vs</span><span class="o">.</span><span class="n">channel_results</span><span class="p">(</span><span class="n">reduced_data</span><span class="p">,</span> <span class="n">outliers</span><span class="p">,</span> <span class="n">pca_samples</span><span class="p">)</span>
 </pre></div>
 
